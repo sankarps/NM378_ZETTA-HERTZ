@@ -8,4 +8,6 @@
     <string name="enter_email_id">Enter Email Id</string>
     <string name="already_have_an_account_login">Already have an account? Login!</string>
     <string name="enter_user_name">Enter user name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
