@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebase/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebase/7.17.1/firebase-auth.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCvOpF3wJsPJS77lMJ2e8fknNIJxi7Gh90",
+  authDomain: "sample-52f87.firebaseapp.com",
+  databaseURL: "https://sample-52f87.firebaseio.com",
+  projectId: "sample-52f87",
+  storageBucket: "sample-52f87.appspot.com",
+  messagingSenderId: "772243612278",
+  appId: "1:772243612278:web:b83bfd330b790f368ab557",
+  measurementId: "G-HF8NKCY9HW"
+};
+firebase.initializeApp(config);
+
+const auth = firebase.auth();
+ 
+
+function login(){
+	var userEmail=document.getElementById("email_id").value;
+	var userPass=document.getElementById("password_field").value;
+	const promise=auth().signInWithEmailAndPassword(userEmail.value, userPass.value);
+	promise.catch(e => alert(e.message));
+	alert("Signed in");
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-form">    
+    <form action="user_data.html" method="post">
+		<div class="avatar"><img src="logo.png"></div>
+    	<h4 class="modal-title">Login to Your Account</h4>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" id="email_id" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" id="password_field" required="required">
+        </div>
+        <div class="form-group small clearfix">
+            <a href="#" class="forgot-link">Forgot Password?</a>
+        </div> 
+        <button onclick="login()" class="btn btn-primary btn-block btn-lg">Login</button>              
+    </form>			
+    
+</div>
+
+</body>
+</html>                                		
