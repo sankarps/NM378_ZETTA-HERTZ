@@ -2,4 +2,10 @@
     <string name="app_name">AgroLens</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_user_sign_up">New User ? Signup!</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="already_have_an_account_login">Already have an account? Login!</string>
+    <string name="enter_user_name">Enter user name</string>
 </resources>
