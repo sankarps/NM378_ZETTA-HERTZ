@@ -10,4 +10,11 @@
     <string name="enter_user_name">Enter user name</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome !</string>
+    <string name="detect">Detect</string>
+    <string name="crop_history">Crop History</string>
+    <string name="crop_details">Crop Details</string>
+    <string name="find">Find</string>
+    <string name="ar">AR</string>
+    <string name="live_prediction">Live Prediction</string>
 </resources>
