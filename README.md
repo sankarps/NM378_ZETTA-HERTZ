@@ -20,3 +20,5 @@ Agrolens, a software mobile application is used to identify the crop type of the
 # CROP HISTORY
 # PROBLEM
      Let us see the feature to find the crop history.  If all the details are stored under the same category of crop, there may arise a chance of high redundancy to retrieve the details.  So in order to avoid this, a feature has been developed.
+# SOLUTION
+ The data that had been already uploaded by the account holder is retrieved from the local database and firebase based on the crop id.  An AI enabled retrieval has been applied which removes the crop that cannot be harvested for a particular time or the crop that has been expired.   We can also search by crop's name in this feature.  All the informations about the crop can be viewed by this feature too.
