@@ -17,4 +17,6 @@
     <string name="find">Find</string>
     <string name="ar">AR</string>
     <string name="live_prediction">Live Prediction</string>
+    <string name="crops">Crops</string>
+    <string name="wheat">Wheat</string>
 </resources>

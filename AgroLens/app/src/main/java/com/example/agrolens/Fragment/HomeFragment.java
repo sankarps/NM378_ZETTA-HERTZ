@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.agrolens.CropDetails.Crop_Details;
 import com.example.agrolens.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -143,7 +144,7 @@ public class HomeFragment extends Fragment {
         crop_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getActivity(),Crop_Details.class);
+                Intent intent=new Intent(getActivity(), Crop_Details.class);
                 intent.putExtra("lang",langs);
                 startActivity(intent);
             }
