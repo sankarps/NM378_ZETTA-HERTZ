@@ -154,11 +154,11 @@ header h1{
                    foreach ($fc as $key => $value){
                      foreach($value as $key2 => $val){
                         foreach($val as $k => $v){
-                           echo"<div class='singleBlog'>";
+                           echo "<div class='singleBlog'>";
                            echo"<img src='".$v['image']."' alt=''>";
                            echo"<div class='blogContent'>";
                            echo"<h3>".$v['cropname']."</h3>";
-                           echo"<p>'.$v['username']." | ".$v['date']."</p>";
+                           echo"<p>'".$v['username']." | ".$v['date']."</p>";
                            echo"<form action='detail.php' method='post'>";
                            echo"<input type='text' name='name' value='".$key."'
                            style='display:none;'>";
