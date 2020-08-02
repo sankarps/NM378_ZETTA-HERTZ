@@ -1,0 +1,17 @@
+{
+    "name": "sankar/firebase",
+    "description": "PHP tutorial",
+    "type": "project",
+    "license": "GNU3",
+    "authors": [
+        {
+            "name": "Pon Sankar",
+            "email": "sankarkalluthu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "^5.0",
+        "php": ">= 7.2.0"
+    }
+}
