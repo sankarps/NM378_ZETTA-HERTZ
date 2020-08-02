@@ -145,60 +145,29 @@ header h1{
     <div class="container">
       <header>
         <h1>USER DATA</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum, officia delectus corrupti modi natus?</p>
       </header>
+        <main>
+	    <?php
+                 include './Agro.php';
+               $users=new Users();
+               $fc=$users->gets();
+                   foreach ($fc as $key => $value){
+                     foreach($value as $key2 => $val){
+                        foreach($val as $k => $v){
+                           echo"<div class='singleBlog'>";
+                           echo"<img src='".$v['image']."' alt=''>";
+                           echo"<div class='blogContent'>";
+                           echo"<h3>".$v['cropname']."</h3>";
+                           echo"<p>'.$v['username']." | ".$v['date']."</p>";
+                           echo"<form action='detail.php' method='post'>";
+                           echo"<input type='text' name='name' value='".$key."'
+                           style='display:none;'>";
+                           echo "<input type='submit' value='Read More' class='btn btn-primary'></form>";
+                           echo "</div>
+                           <div>";break;}}}?>
+         </main>
+	  </div>
+	</section>
 
-      <main>
-        <div class="singleBlog">
-          <img src="wheat1.jpg" alt="">
-          <div class="blogContent">
-            <h3>WHEAT</h3>
-            <p>PAAPPA S | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="singleBlog">
-          <img src="rice1.jpg" alt="">
-          <div class="blogContent">
-            <h3>RICE</h3>
-            <p>ATCHAYA S | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="singleBlog">
-          <img src="cotton1.jpg" alt="">
-          <div class="blogContent">
-            <h3>COTTON</h3>
-            <p>NIRMALA V | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="singleBlog">
-          <img src="sugar1.jpg" alt="">
-          <div class="blogContent">
-            <h3>SUGARCANE</h3>
-            <p>YEDHU KRISHNAN | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-		<div class="singleBlog">
-          <img src="jute1.jpg" alt="">
-          <div class="blogContent">
-            <h3>JUTE</h3>
-            <p>PON SANKAR | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-		<div class="singleBlog">
-          <img src="tea1.jpg" alt="">
-          <div class="blogContent">
-            <h3>TEA</h3>
-            <p>ASHWATH NIVAS | Nov 21, 2018</p>
-            <a href="detail.html" class="btn">Read More</a>
-          </div>
-        </div>
-      </main>
-    </div>
-  </section>
-</body>
-</html>
+	</body>
+     </html>
